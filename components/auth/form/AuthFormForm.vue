@@ -28,11 +28,8 @@
       </a-input>
     </a-form-item>
     <a-form-item>
-      <a-button type="primary" html-type="submit" class="login-form-button">
-        <a-spin v-if="isLoading">
-          <a-icon slot="indicator" type="loading" style="font-size: 20px; color: #ffffff" />
-        </a-spin>
-        <span v-else>Log in</span>
+      <a-button type="primary" html-type="submit" class="login-form-button" :loading="isLoading">
+        Log in
       </a-button>
     </a-form-item>
   </a-form>
